@@ -1,0 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+body > .main-header .logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+	
+}
