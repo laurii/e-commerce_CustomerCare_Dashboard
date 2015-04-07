@@ -21,6 +21,8 @@ library(DT)
 #library(xts)
 library(leaflet)
 
+b<-read.csv("data/forecastcomplete.csv",header=TRUE,sep=",",stringsAsFactors=FALSE)
+
 dashboardPage(skin="blue",
               dashboardHeader(title = "Ecommerce dashboard"),
               
