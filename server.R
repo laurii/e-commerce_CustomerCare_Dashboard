@@ -166,13 +166,13 @@ shinyServer(function(input, output) {
 
 #SAME SUBSET of DATA as above in reactive object-barplot_nvd3_day
 #BARPLOT DATA
-  c<-as.data.frame(b[,c(2,3,7)])
-  colnames(c)<-c("Month","Days","Freq")
-  cc<-c%>%
-    group_by(Month,Days)%>%
-    summarise(Freq=sum(Freq))
-  cc$Days<-factor(cc$Days,labels = c("Mon","Tue","Wed","Thu","Fri","Sat","Sun"))
-  cc
+ # c<-as.data.frame(b[,c(2,3,7)])
+ # colnames(c)<-c("Month","Days","Freq")
+  #cc<-c%>%
+   # group_by(Month,Days)%>%
+  #  summarise(Freq=sum(Freq))
+  #cc$Days<-factor(cc$Days,labels = c("Mon","Tue","Wed","Thu","Fri","Sat","Sun"))
+  #cc
   
   output$barplot<- renderChart({
     nvplot <- nPlot(Freq ~ Days,group="Month",dom="barplot", 
